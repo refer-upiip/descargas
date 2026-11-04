@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Descargas REFER</title>
+<meta name="description" content="Plantillas oficiales para autores de REFER Revista Ferroviaria (IPN, UPIIP): artículos y reseñas en Word, LibreOffice y LaTeX.">
+<style>
+  :root {
+    --oscuro: #2B1250;
+    --medio: #6B3F8F;
+    --gris: #8A8A9A;
+    --claro: #F1ECF6;
+    --lila: #DCD0E8;
+    --fondo: #FFFFFF;
+    --texto: #1F1A26;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font-family: "Times New Roman", Times, serif;
+    color: var(--texto);
+    background: var(--fondo);
+    line-height: 1.5;
+  }
+  .barra { height: 8px; background: linear-gradient(90deg, var(--oscuro) 0 60%, var(--medio) 60% 85%, var(--lila) 85%); }
+  header, main, footer { max-width: 960px; margin: 0 auto; padding: 0 16px; }
+  header {
+    display: flex; align-items: center; justify-content: space-between; gap: 16px;
+    padding-top: 24px; padding-bottom: 16px; border-bottom: 2px solid var(--medio);
+    flex-wrap: wrap;
+  }
+  header .refer { height: 72px; width: auto; }
+  header .inst { display: flex; gap: 14px; align-items: center; }
+  header .inst img { height: 60px; width: auto; }
+  h1 { color: var(--oscuro); font-size: 2rem; margin: 32px 0 8px; }
+  .intro { color: #4A4356; font-size: 1.1rem; margin: 0 0 28px; max-width: 46em; }
+  .tarjetas { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; }
+  .tarjeta {
+    border: 1px solid var(--lila); border-top: 6px solid var(--oscuro); border-radius: 6px;
+    padding: 20px 22px 22px; background: #fff;
+  }
+  .tarjeta h2 { color: var(--oscuro); margin: 0 0 4px; font-size: 1.45rem; }
+  .tarjeta p { margin: 0 0 16px; color: #4A4356; }
+  .botones { display: flex; flex-direction: column; gap: 8px; }
+  .boton {
+    display: flex; justify-content: space-between; align-items: center; gap: 10px;
+    padding: 10px 14px; border-radius: 4px; text-decoration: none;
+    background: var(--claro); color: var(--oscuro); font-weight: bold;
+    border: 1px solid var(--lila);
+  }
+  .boton:hover, .boton:focus-visible { background: var(--medio); color: #fff; border-color: var(--medio); }
+  .boton span { font-weight: normal; font-size: 0.9rem; color: var(--gris); }
+  .boton:hover span, .boton:focus-visible span { color: #EDE5F5; }
+  .boton.secundario { background: #fff; }
+  .nota {
+    margin: 28px 0; padding: 14px 18px; background: var(--claro);
+    border-left: 4px solid var(--medio); color: #3B3446;
+  }
+  .nota a, footer a { color: var(--medio); }
+  footer { padding-top: 16px; padding-bottom: 32px; color: var(--gris); font-size: 0.95rem; border-top: 1px solid var(--lila); }
+  @media (max-width: 560px) {
+    header .refer { height: 52px; }
+    header .inst img { height: 44px; }
+    h1 { font-size: 1.6rem; }
+  }
+</style>
+</head>
+<body>
+<div class="barra"></div>
+<header>
+  <img class="refer" src="assets/img/logo_refer.png" alt="REFER Revista Ferroviaria">
+  <div class="inst">
+    <img src="assets/img/logo_ipn.png" alt="Instituto Politécnico Nacional">
+    <img src="assets/img/logo_upiip.png" alt="UPIIP">
+  </div>
+</header>
+
+<main>
+  <h1>Plantillas para autores</h1>
+  <p class="intro">Descarga la plantilla del tipo de manuscrito que vas a enviar a REFEЯ Revista Ferroviaria:
+  Tecnología, Innovación, Política y Sociedad. Cada plantilla está disponible en Word, LibreOffice y LaTeX;
+  el contenido y las instrucciones son los mismos en los tres formatos.</p>
+
+  <div class="tarjetas">
+    <section class="tarjeta">
+      <h2>Artículo</h2>
+      <p>Artículos de investigación originales.</p>
+      <div class="botones">
+        <a class="boton" href="plantillas/articulo/plantilla_articulo_refer.docx" download>Word <span>.docx</span></a>
+        <a class="boton" href="plantillas/articulo/plantilla_articulo_refer.odt" download>LibreOffice <span>.odt</span></a>
+        <a class="boton" href="plantillas/articulo/plantilla_articulo_refer_latex.zip" download>LaTeX <span>.zip (tex, bib, img)</span></a>
+        <a class="boton secundario" href="https://www.overleaf.com/docs?snip_uri=https://refer-upiip.github.io/descargas/plantillas/articulo/plantilla_articulo_refer_latex.zip&amp;engine=pdflatex" target="_blank" rel="noopener">Abrir en Overleaf <span>LaTeX en línea</span></a>
+        <a class="boton secundario" href="plantillas/articulo/plantilla_articulo_refer.pdf" target="_blank" rel="noopener">Vista previa <span>.pdf</span></a>
+      </div>
+    </section>
+
+    <section class="tarjeta">
+      <h2>Reseña</h2>
+      <p>Reseñas críticas de libros y obras recientes.</p>
+      <div class="botones">
+        <a class="boton" href="plantillas/resena/plantilla_resena_refer.docx" download>Word <span>.docx</span></a>
+        <a class="boton" href="plantillas/resena/plantilla_resena_refer.odt" download>LibreOffice <span>.odt</span></a>
+        <a class="boton" href="plantillas/resena/plantilla_resena_refer_latex.zip" download>LaTeX <span>.zip (tex, bib)</span></a>
+        <a class="boton secundario" href="https://www.overleaf.com/docs?snip_uri=https://refer-upiip.github.io/descargas/plantillas/resena/plantilla_resena_refer_latex.zip&amp;engine=pdflatex" target="_blank" rel="noopener">Abrir en Overleaf <span>LaTeX en línea</span></a>
+        <a class="boton secundario" href="plantillas/resena/plantilla_resena_refer.pdf" target="_blank" rel="noopener">Vista previa <span>.pdf</span></a>
+      </div>
+    </section>
+  </div>
+
+  <div class="nota">
+    Los enlaces siempre entregan la versión vigente de cada plantilla. Si tienes dudas sobre el formato,
+    escribe a <a href="mailto:refer.upiip@ipn.mx">refer.upiip@ipn.mx</a> o consulta
+    <a href="https://refer.upiip.ipn.mx">refer.upiip.ipn.mx</a>.
+  </div>
+</main>
+
+<footer>
+  REFEЯ Revista Ferroviaria · Instituto Politécnico Nacional · Unidad Profesional Interdisciplinaria de Ingeniería campus Palenque
+</footer>
+</body>
+</html>
